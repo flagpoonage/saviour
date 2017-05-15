@@ -1,0 +1,26 @@
+{
+  "debugMode": true,
+  "plugins": {
+
+    "rabbit": {
+
+      "module": "./plugins/rabbit",
+      "options": {
+        "server": "amqp://localhost:5672",
+        "queues": {
+          "inbound": "md.micro.inbound.scheduler",
+          "errors": "md.micro.error"
+        }
+      }
+
+    },
+    
+    "loki": {
+      "module": "./plugins/loki",
+      "options": {
+        "dbpath": "./db.json"
+      }
+    }
+
+  }
+}
