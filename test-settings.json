@@ -1,9 +1,7 @@
 {
   "debugMode": true,
   "plugins": {
-
     "rabbit": {
-
       "module": "./plugins/rabbit",
       "options": {
         "server": "amqp://localhost:5672",
@@ -12,15 +10,6 @@
           "errors": "md.micro.error"
         }
       }
-
-    },
-    
-    "loki": {
-      "module": "./plugins/loki",
-      "options": {
-        "dbpath": "./db.json"
-      }
     }
-
   }
 }
